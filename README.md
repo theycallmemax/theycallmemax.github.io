@@ -1,0 +1,2 @@
+# theycallmemax.github.io
+DNSmentor
