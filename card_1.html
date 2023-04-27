@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+
+{% block title %} Подробности о менторе {% endblock %}
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=0.7" media="screen and (max-width: 600px)">
+</head>
+
+{% block style %}
+  body {
+    max-width: 100%;
+    background-image: linear-gradient(to right, rgba(223, 223, 223, 1), rgba(255, 247, 239, 1), rgba(255, 247, 239, 1));
+  }
+  main, footer{
+    background-image: linear-gradient(to right, rgba(223, 223, 223, 1), rgba(223, 223, 223, 1), rgba(255, 247, 239, 1));
+  }
+  .dns{
+    background-color: #fc8507;
+  }
+  .dns2 {
+    background-color: black;
+    color: white;
+  }
+  .nav-link{
+    color: black;
+  }
+  .nav-link2 {
+    color: white;
+  }
+  li{
+    margin: 0px 10px;
+  }
+  .nav-b {
+    margin-top: 5px;
+  }
+  .card {
+    background-color: rgba(255, 247, 239, 1);
+    color: black;
+    border-radius: 15px;
+    margin-left: 80px;
+    padding: 10px;
+  }
+  .card1 {
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 400px;
+    height: 400px;
+  }
+  .badge {
+    font-size: medium;
+    margin: 5px;
+  }
+  .spec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .spec span{
+    width: auto;
+    padding: 17px;
+  }
+  .spec h4 {
+    margin-right: 25px;
+    font-weight: bold;
+    margin-left: 30px;
+  }
+
+.button {
+  background-color: black;
+  color: white;
+  vertical-align: center;
+  -moz-border-radius: 10px; /* Firefox */
+  -webkit-border-radius: 10px; /* Safari 4 */
+  border-radius: 10px; /* IE 9, Safari 5, Chrome */
+  width: 240px;
+  height: 40px;
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  float : bottom;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:20% 30% 40%;
+  justify-items: center;
+}
+
+.spec h4 {
+  font-weight : bold;
+  margin-left: 30px;
+}
+
+.badge {
+    font-size: 1em;
+}
+
+        .skr{
+        border-radius: 30px;
+        margin: 2px;
+    }
+.speci {
+  a {
+    display: flex;
+    text-decoration: none;
+  }
+
+  span {
+    flex: auto;
+  }
+}
+
+{% endblock %}
+
+{% block body %}
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Навыки</h4>
+      {%for el in mentor.specialization.replace(", ", ",").split(",")%}
+          <input type="submit" class="btn btn-dark skr" value="{{el}}" >
+      {% endfor %}
+      </div>
+      <div class="col-md-4">
+        <h2>{{ mentor.name }}</h2>
+        <p><strong>Компания:</strong> {{ mentor.company_title }}</p>
+        <p><strong>Опыт работы:</strong> {{ mentor.experience }}</p>
+        <p><strong>Цена (за час):</strong> {{ mentor.price }}</p>
+        <p><strong>Проекты</strong></p>
+        {{ mentor.projects }}
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <img src="{{ url_for('static', filename='img/photos/' + mentor.photo) }}" alt="{{ mentor.name }}" class="img-fluid">
+          <figcaption class="bot">
+            <form action="/menti_request" method="post" id="form-{{ mentor.telegram }}">
+              <input type="hidden" name="telegram" value="{{ mentor.telegram }}">
+              <button type="submit" class="button">Оставить заявку</button>
+            </form>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @media (max-width: 415px) {
+      h2, h4 {
+        font-size: 1.2rem;
+      }
+      .col-md-4 {
+        padding: 10px;
+      }
+      .button {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+      }
+    }
+  </style>
+    {% endblock %}

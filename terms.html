@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=640, initial-scale=0.7" media="screen and (max-width: 400px)">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>Правила сайта</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+<style>
+	body {
+  background-image: linear-gradient(to right, rgba(223, 223, 223, 1), white, white);
+  }
+      header, footer, container-fluid{
+  background-image: linear-gradient(to right, rgba(223, 223, 223, 1), rgba(223, 223, 223, 1), white);
+	  }
+
+
+
+	  .nav-link{
+	  color: black;
+	  }
+
+
+
+	  li{
+	  margin: 0px 10px;
+	  }
+
+
+	  img {
+	   border-radius: 30px;
+	  }
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+.but {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+.faq {
+    margin: 0;
+  padding: 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+span{
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.but a:before,
+.but a:after{
+  position: absolute;
+    content: "Ментору";
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.faq a:before,
+.faq a:after{
+  position: absolute;
+    content: "FAQ";
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+    margin-right: 10px;
+}
+
+span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.head {
+    display: grid;
+    align-content: end;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+h5 {
+    margin-left: 10px;
+}
+
+.main {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+    width: 150px;
+    height: 52px;
+    border: none;
+    background-color: #fc8507;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+
+  }
+
+.fot a:hover{
+    color: white;
+
+}
+
+    h1 {
+      text-align: center;
+      color: black;
+      margin-top: 20px;
+      margin-bottom: 20px;
+	  font-weight: bold;
+	  font-size: 32px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1;
+	  text-align: justify;
+      }
+
+    main h2 {
+      color: black;
+      margin-top: 20px;
+      margin-bottom: 10px;
+	  font-size: 20px;
+	  font-weight: bold;
+    }
+	
+	 main h3 {
+      color: #4e4e4e;
+      margin-top: 18px;
+      margin-bottom: 10px;
+	  font-size: 20px;
+	  font-weight: bold;
+    }
+
+    main ul {
+      list-style-type: disc;
+      margin-left: 40px;
+    }
+
+    .main1 {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+    width: 150px;
+    height: 52px;
+    border: none;
+    background-color: #fc8507;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+
+  }
+.main1:hover {
+    color: white;
+
+}
+	
+
+  </style>
+</head>
+<body>
+
+<!-- шапка -->
+  <div class="container-fluid">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img class="bi me-2" width=250 height="50" src="/static/img/logo5.png">
+      </a>
+
+      <div class="nav nav-pills nav-b head">
+        <div class="nav-item"><a href="/"  aria-current="page" class="main1">Главная</a></div>
+          <div class="nav-item faq"><span><a href="/faq" ></a></span></div>
+        <div class="nav-item but"><span><a  href="/mentor_anketa" ></a></span></div>
+      </div>
+    </header>
+  </div>
+{% block body %} {% endblock %}
+
+  <h1>Правила сайта</h1>
+  <main>
+    <p>Добро пожаловать на сайт DNS-mentor - сервиса для поиска менторов в разных областях. Наша миссия - помочь вам найти опытного наставника, который поделится своими знаниями и поможет вам достичь своих целей.</p>
+
+    <p>Для того, чтобы пользоваться нашим сервисом, вам необходимо согласиться с нашими правилами и условиями использования. Пожалуйста, внимательно прочитайте их перед тем, как создать свой профиль или начать поиск ментора.</p>
+
+    <h2>Для менти</h2>
+
+    <h3>Отправка заявки на общение с ментором</h3>
+
+    <ul>
+      <li>Для того, чтобы отправить заявку на общение с ментором, вы должны предоставить телеграм для связи, а также заполнить анкету «О себе»</li>
+      <li>После этого выбранный вами ментор будет оповещен о вашем желании связаться с ним. И вы вскоре начнете общение, если ментор примет приглашение.</li>
+    </ul>
+
+    <h3>Поиск и выбор ментора</h3>
+
+    <ul>
+      <li>Наш сервис предоставляет вам возможность поиска менторов по разным критериям, таким как область знаний, опыт работы, рейтинг, отзывы и т.д.</li>
+      <li>Вы можете просматривать профили менторов, читать их описание, условия сотрудничества, цены и другую информацию.</li>
+      <li>Вы можете связаться с ментором через предложенный выше способ. Вы обязуетесь общаться с ментором вежливо и уважительно, не нарушая его прав и интересов.</li>
+      <li>Вы можете договориться с ментором об индивидуальном курсе занятий для вас – это могут быть как разовые встречи, так и целый курс. Вы должны четко определить цели и ожидания 
+	      от обучения, а также согласовать расписание, формат и продолжительность занятий.</li>
+	  <li>В случае оказании ментором платных услуг вы можете договориться с ним о произведении оплаты. Ментор сам решает, когда ему необходимо получить средства. 
+	      Вы можете обсудить с ментором формат оплаты. Мы не несем ответственности за оплату услуг ментора за пределами нашего сайта.</li>
+      <li>Вы можете отменить или перенести учебную сессию или курс обучения или любую другую договоренность о встречи по согласованию с ментором. 
+	      В случае отмены или переноса вы должны уведомить ментора заранее.</li></ul>
+      
+	<h2>Для ментора</h2>
+	
+	<h3>Создание анкеты ментора</h3>
+	
+	 <ul>     
+		  <li>Для появления вашей анкеты на сайте вам необходимо отправить заявку «Стать ментором» и заполнить анкету для предоставления информации о вас менти.</li>
+	      <li>Анкета будет проходить модерацию. Модерация включает в себя проверку анкеты на отсутствие запрещенных, некорректных и неприличных материалов.</li>
+    </ul>
+	
+	<h3>Прием и обработка заявок от менти</h3>
+	
+    <ul>
+		<li>В случае, если менти выбрал вас как своего ментора и подал запрос на общение с вами. Вам в телеграм приходит уведомление о том, что менти хочет связаться с вами. 
+			В уведомлении будут указаны: информация о нем, заполненная им же самим в анкете, телеграм для связи. Вы можете отказаться или же принять запрос.</li>
+    </ul>
+	
+    <h3>Общение и проведение занятий</h3>
+
+		<ul>
+			<li>При индивидуальном (личном) общении с менти вы должны будете договориться об удобных для вас местах проведения встреч, плане обучения, способе оплаты. 
+			Сервис не несет ответственности за оплату, произведенной за пределами данного сайта.</li>
+			<li>Вы обязуетесь общаться с ментором вежливо и уважительно, не нарушая его прав и интересов.<li>
+			<li>Вы можете отменить или перенести учебную сессию или курс обучения или любую другую договоренность о встречи по согласованию с менти. В случае отмены или переноса вы должны уведомить менти заранее.</li>
+		</ul>
+	</main>
+     <div class="container-fluid">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <img class="bi me-2" width=250 height="50" src="/static/img/logo5.png">
+      </a>
+      <p class="text-body-secondary">&copy; 2023</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3 fot">
+        <h5><b>О проекте</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/o_nas" class="nav-link p-0 text-body-secondary">Проект "ДНС-ментор"</a></li>
+        <li class="nav-item mb-2"><a href="/team" class="nav-link p-0 text-body-secondary">Команда</a></li>
+        <li class="nav-item mb-2"><a href="/advantages" class="nav-link p-0 text-body-secondary">Преимущества</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3 fot">
+      <h5><b>Ментору</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/mentor_anketa" class="nav-link p-0 text-body-secondary">Подать анкету</a></li>
+        <li class="nav-item mb-2"><a href="/rules" class="nav-link p-0 text-body-secondary">Правила сайта</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3 fot" >
+      <h5><b>Менти</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary fot">Каталог менторов</a></li>
+        <li class="nav-item mb-2"><a href="/rules" class="nav-link p-0 text-body-secondary">Правила сайта</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+</html>

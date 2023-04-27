@@ -1,0 +1,484 @@
+
+
+<!doctype html>
+<html lang="ru" data-bs-theme="auto">
+  <head><script src="assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=640, initial-scale=0.51" media="screen and (max-width: 400px)">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>Анкета ментора</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <style>
+
+     	body {
+  background-image: linear-gradient(to right, rgba(223, 223, 223, 1), white, white);
+  }
+      header, footer, container-fluid{
+  background-image: linear-gradient(to right, rgba(223, 223, 223, 1), rgba(223, 223, 223, 1), white);
+	  }
+
+
+
+	  .nav-link{
+	  color: black;
+	  }
+
+	  .img1 {
+    float : right;
+    height : 460px;
+    width : 460px;
+    margin-right: 70px;
+
+    }
+
+
+
+	  li{
+	  margin: 0px 10px;
+	  }
+
+
+	  .img1 {
+	   border-radius: 30px;
+       float: right;
+	  }
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+.but {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+.faq {
+    margin: 0;
+  padding: 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+span{
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.but a:before,
+.but a:after{
+  position: absolute;
+    content: "Ментору";
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.faq a:before,
+.faq a:after{
+  position: absolute;
+    content: "FAQ";
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+    margin-left: 10px;
+}
+
+span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.head {
+    display: grid;
+    align-content: end;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+h5 {
+    margin-left: 10px;
+}
+
+.main {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+    width: 150px;
+    height: 52px;
+    border: none;
+    background-color: #fc8507;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+
+  }
+
+.fot a:hover{
+    color: white;
+
+}
+
+
+
+
+    .button {
+      background-color: black;
+      color: white;
+      vertical-align: center;
+      -moz-border-radius:  10px; /* Firefox */
+      -webkit-border-radius:  10px; /* Safari 4 */
+      border-radius:  10px; /* IE 9, Safari 5, Chrome */
+      width: 120px;
+      height: 40px;
+    }
+
+
+
+    .nav-b {
+      margin-top: 5px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    .img {
+        width: 800px;
+        height: 500px;
+        float: right;
+        margin: 20px;
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    .main1 {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+    width: 150px;
+    height: 52px;
+    border: none;
+    background-color: #fc8507;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+
+  }
+.main1:hover {
+    color: white;
+
+}
+
+/* The alert message box */
+
+.alert {
+    padding: 20px;
+    background-color: lightskyblue;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+.png {
+    margin : 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+
+}
+
+.table1 {
+    width: 91%;
+    border-collapse: collapse;
+    margin-left: 80px;
+
+}
+
+.table2 {
+margin: auto;
+}
+
+h4 {
+
+text-align: right;
+margin-right: 130px;
+}
+
+
+
+
+.table td {
+    padding: 3%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .img {
+    width: 450px;
+    height: 275px;
+    float: none;
+    margin: 10px auto;
+  }
+}
+    </style>
+    
+  </head>
+  <body>
+  <!-- шапка -->
+  <div class="container-fluid">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img class="bi me-2" width=250 height="50" src="/static/img/logo5.png">
+      </a>
+
+      <div class="nav nav-pills nav-b head">
+        <div class="nav-item"><a href="/"  aria-current="page" class="main1">Главная</a></div>
+          <div class="nav-item faq"><span><a href="/faq" ></a></span></div>
+        <div class="nav-item but"><span><a  href="/mentor_anketa" ></a></span></div>
+      </div>
+    </header>
+  </div>
+{% block body %} {% endblock %}
+
+
+<main>
+
+ <form action="/mentor_anketa"  enctype="multipart/form-data" method="post" >
+
+   <h1>
+     После заполнения этой анкеты в it-сообществе Дальнего Востока будет на одного ментора больше
+   </h1><br><br>
+     <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          Обратите внимание, что для получения оповещения в чат-боте нужно сначала ему написать @MentorAppointment_bot
+     </div><br><br>
+     <h4>Отсканируй для перехода в бота</h4>
+     <div><img class="img1" src="/static/img/photos/QR_code.png" > </div>
+     <div>
+  <p>
+    <img src="/static/img/png.png" width="155" height="155" class="png">
+    <label for="photo">Загрузите фото</label>
+<input type="file" id="photo" name="photo" accept="image/jpg,image/jpeg,image/png,image/gif">  </p><br><br>
+  <p>
+    Ваше имя и фамилия<br>
+    <input type="text" name="name" size="40%">
+  </p><br>
+
+  <p>
+      Топ проектов, в которых вы участвовали<br>
+    <input type="text" name="project" size="40%"><br><br>
+    </p>
+  <p>
+    В какой компании и на какой должности вы работаете?<br>
+    <input type="text" name="company" size="40%">
+  </p>
+
+</div><br><br>
+    <p>С чем вы можете помочь?<br>
+      <table class="table" cellspacing="0">
+          <tr>
+            <td>
+              <input type="checkbox" name="help1" value="Analytics"> Analytics<Br>
+            </td>
+            <td>
+              <input type="checkbox" name="help2" value="Development"> Development<Br>
+            </td>
+            <td>
+                <input type="checkbox" name="help3" value="DevOps"> DevOps<Br>
+            </td>
+            <td>
+                <input type="checkbox" name="help4" value="Management"> Management<Br>
+            </td>
+
+            <td>
+              <input type="checkbox" name="help5" value="HR"> HR<Br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="help6" value="UX/UI">UX/UI<Br>
+            </td>
+            <td>
+              <input type="checkbox" name="help7" value="Marketing"> Marketing<Br>
+            </td>
+            <td>
+               <input type="checkbox" name="help8" value="QA"> QA<Br>
+            </td>
+
+            <td>
+              <input type="checkbox" name="help9" value="Data Science/ML"> Data Science/ML<Br>
+            </td>
+            <td>
+              <input type="checkbox" name="help10" value="Business"> Business<Br>
+            </td>
+          </tr>
+    </table>
+  </p><br>
+   <p>
+      Другие навыки (специализации, языки и тп.)<br>
+    <input type="text" name="additional_information" size="40%"><br>
+    </p><br>
+    <p>
+      <p>
+
+   Ваш опыт работы:
+      <br>
+     <table class="table table1" cellspacing="0">
+     <tr>
+      <td><input type="radio" name="experience" value="меньше 1 года" id="exp1">
+      <label for="exp1">меньше 1 года</label>    </td>
+      <td>
+      <input type="radio" name="experience" value="1-2 год(а)" id="exp2">      <label for="exp2">1-2 год(а)</label>
+      </td>    <td>
+      <input type="radio" name="experience" value="2-4 года" id="exp3">      <label for="exp3">2-4 года</label>
+     </td>    <td>
+      <input type="radio" name="experience" value="5-10 лет" id="exp4">      <label for="exp4">5-10 лет</label>
+     </td>    <td>
+      <input type="radio" name="experience" value="более 10 лет" id="exp5">      <label for="exp5">10+ лет</label>
+    </td>  </tr>
+</table>
+     <p>
+Какова цена ваших занятий?
+<table class="table table1" cellspacing="0">
+     <tr>
+      <td><input type="radio" name="price" value="Бесплатно" id="pr1">
+      <label for="pr1">Бесплатно</label>    </td>
+      <td>
+      <input type="radio" name="price" value="По договоренности" id="pr2">   <label for="pr2">По договоренности</label>
+      </td>
+     <td>
+         <input type="text" name="price_text" value="" id="pr3" placeholder="1000р">   <label for="pr3">Напишите цену за час вашей работы</label>
+     </td></tr>
+ </table><br><br>
+   <p>
+    Телеграм для связи<br>
+    <input type="text" name="tg" size="40%" placeholder="без@">
+  </p>
+     <input type='submit' value="Отправить" class="button">
+  </form>
+</main>
+  <!-- Футер -->
+     <div class="container-fluid">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <img class="bi me-2" width=250 height="50" src="/static/img/logo5.png">
+      </a>
+      <p class="text-body-secondary">&copy; 2023</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3 fot">
+        <h5><b>О проекте</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/o_nas" class="nav-link p-0 text-body-secondary">Проект "ДНС-ментор"</a></li>
+        <li class="nav-item mb-2"><a href="/team" class="nav-link p-0 text-body-secondary">Команда</a></li>
+        <li class="nav-item mb-2"><a href="/advantages" class="nav-link p-0 text-body-secondary">Преимущества</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3 fot">
+      <h5><b>Ментору</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/mentor_anketa" class="nav-link p-0 text-body-secondary">Подать анкету</a></li>
+        <li class="nav-item mb-2"><a href="/rules" class="nav-link p-0 text-body-secondary">Правила сайта</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3 fot" >
+      <h5><b>Менти</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary fot">Каталог менторов</a></li>
+        <li class="nav-item mb-2"><a href="/rules" class="nav-link p-0 text-body-secondary">Правила сайта</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+

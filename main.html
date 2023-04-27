@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=640, initial-scale=0.7" media="screen and (max-width: 400px)">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>DNS mentor</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+
+	
+	body {
+  background-image: linear-gradient(to right, rgba(223, 223, 223, 1), rgb(249,249,249));
+  }
+
+	
+      header, footer, container-fluid{
+  background-image: linear-gradient(to right, rgba(223, 223, 223, 1), rgba(223, 223, 223, 1), white);
+	  }
+
+	  .nav-link{
+	  color: black;
+	  }
+
+	  li{
+	  margin: 0px 10px;
+	  }
+
+
+	  img {
+	   border-radius: 30px;
+	  }
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+.but {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+.faq {
+    margin: 0;
+  padding: 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+span{
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.but a:before,
+.but a:after{
+  position: absolute;
+    content: "Ментору";
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.faq a:before,
+.faq a:after{
+  position: absolute;
+    content: "FAQ";
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+    margin-right: 10px;
+}
+
+span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.head {
+    display: grid;
+    align-content: end;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+h5 {
+    margin-left: 10px;
+}
+
+
+
+.fot a:hover{
+    color: white;
+
+}
+
+	  .search {
+      text-align: center;
+      margin: 40px;
+    }
+
+    .search1{
+      width: 400px;
+      height: 40px;
+      border-color: rgba(252, 133, 7, 1);
+      border-width: medium;
+      border-radius: 10px;
+
+    }
+	
+	.button {
+      background-color: black;
+      color: white;
+      vertical-align: center;
+      -moz-border-radius:  10px; /* Firefox */
+      -webkit-border-radius:  10px; /* Safari 4 */
+      border-radius:  10px; /* IE 9, Safari 5, Chrome */
+      width: 120px;
+      height: 50px;
+    }
+
+    .button-card {
+      background-color: black;
+      color: white;
+      vertical-align: center;
+      -moz-border-radius:  10px; /* Firefox */
+      -webkit-border-radius:  10px; /* Safari 4 */
+      border-radius:  10px; /* IE 9, Safari 5, Chrome */
+      width: 120px;
+      height: 50px;
+        float: right;
+    }
+
+    .grid-spec {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      justify-items: center;
+
+
+    }
+	.grid-spec1 {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    .grid-spec2 {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    .grid-spec3 {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    .grid-spec4 {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    .grid-spec5 {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+
+
+
+    .orange {
+	background-image: linear-gradient(#92b7d3, rgb(249,249,249));
+      line-height: 10px;
+    }
+	
+	.badge{
+	font-size: 1em;
+	}
+
+    .skr{
+        border-radius: 30px;
+    }
+
+    .card {
+        width : 80%;
+        height : 450px;
+        margin-left: 45px;
+        margin-top: 50px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+	
+	   .card-img {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     border-radius: 15px; /* 5px rounded corners */
+     width: 80%;
+     height: 60%;
+
+}
+
+
+
+
+    .nav-b {
+      margin-top: 5px;
+    }
+
+  .container {
+    padding: 5px 5px 0 5px;
+}
+
+  .perf_0{
+  background-color: rgb(249,249,249);
+  }
+  
+  .perf_1{
+  background-image: linear-gradient(rgb(249,249,249), #92b7d3);
+  }
+
+  .tex{
+  padding: 5%;
+  }
+  
+  .but_met {
+      background-color: rgba(252, 133, 7, 1);
+      color: white;
+      vertical-align: center;
+      -moz-border-radius:  10px; /* Firefox */
+      -webkit-border-radius:  10px; /* Safari 4 */
+      border-radius:  15px; /* IE 9, Safari 5, Chrome */
+      width: 180px;
+      height: 50px;
+	  box-shadow: 5px 10px 5px;
+      text-decoration: none;
+      text-align: center;
+      padding: 12px 12px 0 12px;
+    }
+
+  .but_met:hover {
+      color: white;
+  }
+
+  .grid-but {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  }
+
+
+
+  </style>
+</head>
+  <body>
+
+  <!-- шапка -->
+  <div class="container-fluid">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img class="bi me-2" width=250 height="50" src="/static/img/logo5.png">
+      </a>
+
+      <div class="nav nav-pills nav-b head">
+          <div class="nav-item faq"><span><a href="/faq" ></a></span></div>
+        <div class="nav-item but"><span><a  href="/mentor_anketa" ></a></span></div>
+      </div>
+    </header>
+  </div>
+   
+
+<!-- тело -->
+  <main>
+  
+      <div class="row featurette perf_0">
+      <div class="col-md-7 tex">
+        <h1 class="featurette-heading fw-normal lh-1">Менторы с Дальнего Востока готовы помочь тебе!</h1><br>
+        <p align="justify" class="lead">Не откладывай свое совершенствование на потом - начни сейчас и стань лучшей версией себя!</p>
+          <a class="but_met" type="submit" href="#scroll">Каталог менторов</a>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  src="/static/img/people.jpg">
+    </div>
+	<div class="perf_1" >
+	  <form class="search" action="/" method="POST" id="scroll">
+    <input class="search1" type="search" name="query" placeholder="Найди своего ментора...">
+  <input class="button" type="submit" value="Найти" size="25px" href="#scroll1">
+ </form>
+
+  </div>
+  
+<div class="orange">
+    <div  class="grid-spec">
+      <div class="grid-spec1">
+       {% for el in block1 %}
+        <form action="/" method="POST">
+
+        <!-- скрытый параметр -->
+          <input type="hidden" name="{{el}}" value="{{el}}" class="badge text-bg-dark rounded-pill">
+          <input type="submit" class="btn btn-dark skr" value="{{el}}" >
+
+        <br><br></form>
+    {% endfor %}
+      </div>
+      <div class="grid-spec2">
+      {% for el in block2 %}
+        <form action="/" method="POST">
+
+        <!-- скрытый параметр -->
+          <input type="hidden" name="{{el}}" value="{{el}}" class="badge text-bg-dark rounded-pill">
+          <input type="submit" class="btn btn-dark skr" value="{{el}}" >
+
+        <br><br></form>
+        {% endfor %}
+      </div>
+      <div class="grid-spec3">
+         {% for el in block3 %}
+        <form action="/" method="POST">
+
+        <!-- скрытый параметр -->
+          <input type="hidden" name="{{el}}" value="{{el}}" class="badge text-bg-dark rounded-pill">
+          <input type="submit" class="btn btn-dark skr" value="{{el}}" >
+
+        <br><br></form>
+        {% endfor %}
+      </div>
+
+      <div class="grid-spec4">
+        {% for el in block4 %}
+        <form action="/" method="POST">
+
+        <!-- скрытый параметр -->
+          <input type="hidden" name="{{el}}" value="{{el}}" class="badge text-bg-dark rounded-pill">
+          <input type="submit" class="skr btn btn-dark" value="{{el}}" >
+
+        <br><br></form>
+        {% endfor %}
+      </div>
+
+      <div class="grid-spec5">
+        {% for el in block5 %}
+        <form action="/" method="POST">
+
+        <!-- скрытый параметр -->
+          <input type="hidden" name="{{el}}" value="{{el}}" class="badge text-bg-dark rounded-pill">
+          <input type="submit" class="btn btn-dark skr" value="{{el}}" >
+
+        <br><br></form>
+        {% endfor %}
+      </div>
+    </div>
+ <div class="container">
+
+    <div class="row">
+      {% for el in mentor %}
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img class="card-img"  src="{{ url_for('static', filename='img/photos/' + el.photo) }}"  style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">{{ el.name }}</h4>
+              {%for el in el.company_title.replace(", ", ",").split(",")%}
+            <p class="card-text">{{ el}}</p>
+              {% endfor %}
+            <div class="grid-but">
+               <a class="p-2 text-dark" href="card/{{el.id}} " style="padding: 10px 20px;">подробнее</a>
+              <form action="/menti_request" method="post" id="form-{{ el.telegram }}">
+                <input type="hidden" name="telegram" value="{{ el.telegram }}">
+                <button type="submit" class="button-card">Оставить заявку</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+ </div>
+     </div>
+</div>
+      </div>
+</div>
+      </div>
+</main>  
+
+
+<!-- Футер -->
+ <div class="container-fluid">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <img class="bi me-2" width=250 height="50" src="/static/img/logo5.png">
+      </a>
+      <p class="text-body-secondary">&copy; 2023</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3 fot">
+        <h5><b>О проекте</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/o_nas" class="nav-link p-0 text-body-secondary">Проект "ДНС-ментор"</a></li>
+        <li class="nav-item mb-2"><a href="/team" class="nav-link p-0 text-body-secondary">Команда</a></li>
+        <li class="nav-item mb-2"><a href="/advantages" class="nav-link p-0 text-body-secondary">Преимущества</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3 fot">
+      <h5><b>Ментору</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/mentor_anketa" class="nav-link p-0 text-body-secondary">Подать анкету</a></li>
+        <li class="nav-item mb-2"><a href="/rules" class="nav-link p-0 text-body-secondary">Правила сайта</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3 fot" >
+      <h5><b>Менти</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary fot">Каталог менторов</a></li>
+        <li class="nav-item mb-2"><a href="/rules" class="nav-link p-0 text-body-secondary">Правила сайта</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+</html>
+
